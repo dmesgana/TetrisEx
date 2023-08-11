@@ -2,14 +2,14 @@
 #define _IO_
 
 #ifndef LINUX
-#include "SDL/include/SDL.h"
-#include "SDL/SDL_GfxPrimitives/SDL_gfxPrimitives.h"
+#include "SDL2/include/SDL2/SDL.h"
+//#include "SDL2/SDL2_GfxPrimitives/SDL2_gfxPrimitives.h"
 #else
-#include <SDL/SDL.h>
-#include "SDL/SDL_GfxPrimitives/SDL_gfxPrimitives.h"
+#include "SDL2/include/SDL2/SDL.h"
+//#include "SDL/SDL_GfxPrimitives/SDL_gfxPrimitives.h"
 #endif
 #pragma comment(lib, "SDL/lib/SDL.lib")
-#pragma comment(lib, "SDL/SDL_GfxPrimitives/SDL_gfxPrimitives_Static.lib")
+//#pragma comment(lib, "SDL/SDL_GfxPrimitives/SDL_gfxPrimitives_Static.lib")
 
 enum color {BLACK, RED, GREEN, BLUE, CYAN, MAGENTA, YELLOW, WHITE, COLOR_MAX};
 

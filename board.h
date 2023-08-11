@@ -16,7 +16,11 @@
 class Board
 {
     public:
-    Board(Pieces *pPieces, int pScreenHeight);
+        Board(Pieces* pPieces, int pScreenHeight)
+        {
+            nPieces = pPieces;
+            screenHeight = pScreenHeight;
+        };
 
     int GetXPosInPixels(int Pos);
     int GetYPosInPixels(int Pos);

@@ -3,8 +3,11 @@
 #include <windows.h>
 #endif
 
-
+#ifndef LINUX
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+#else
+int main()
+#endif
 {
 	IO mIO;
 	int screenHeight = mIO.GetScreenHeight();
